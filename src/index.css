@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-rose-50 text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900;
+  }
+}
+
+  /* Custom Playful Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-rose-300 rounded-full border-2 border-rose-50;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-rose-400;
+  }
